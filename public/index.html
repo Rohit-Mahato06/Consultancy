@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultancy</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body onload="slider()">
+    <!-- ?navigation bar -->
+    <nav
+      class="flex justify-around items-center sticky h-20 text-xl bg-transparent text-white top-0 scroll-smooth z-50"
+    >
+      <h1>LOGO</h1>
+      <ul class="flex gap-8 cursor-pointer">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li class="relative inline-block">
+          <a href="#" class="block text-center"
+            >Study Abroad <i class="fa-solid fa-angle-down"></i
+          ></a>
+          <ol
+            class="dropdown bg-white text-black invisible w-[250px] px-3 py-2 rounded-lg absolute z-50 duration-300 opacity-0"
+          >
+            <li class="block border-b border-b-black pb-4 my-4">
+              <a href="#" class="hover:text-gray-500">Study in Australia</a>
+            </li>
+            <li class="block border-b border-b-black pb-4 my-4">
+              <a href="#" class="hover:text-gray-500">Study in New zealand</a>
+            </li>
+            <li class="block border-b border-b-black pb-4 my-4">
+              <a href="#" class="hover:text-gray-500">Study in Canada</a>
+            </li>
+            <li class="block border-b border-b-black pb-4 my-4">
+              <a href="#" class="hover:text-gray-500">Study in UK</a>
+            </li>
+            <li class="block">
+              <a href="#" class="hover:text-gray-500">Study in USA</a>
+            </li>
+          </ol>
+        </li>
+        <li class="inline-block relative">
+          <a href="#" class="block text-center"
+            >Courses
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ol
+            class="dropdown bg-white text-black invisible w-[300px] px-3 py-2 rounded-lg absolute z-50 duration-300 opacity-0"
+          >
+            <li class="block border-b border-b-black my-2 pb-3">
+              Study Information Technology (IT) in Australia
+            </li>
+            <li class="block border-b border-b-black my-2 py-3">
+              Study Agriculture in Australia
+            </li>
+            <li class="block border-b border-b-black my-2 py-3">
+              Study MBA in Australia
+            </li>
+            <li class="block border-b border-b-black my-2 py-3">
+              Study Architecture in Australia
+            </li>
+            <li class="block border-b border-b-black my-2 py-3">
+              Study Law in Australia
+            </li>
+            <li class="block border-b border-b-black my-2 py-3">
+              Study Applied and Pure Science in Australia
+            </li>
+            <li class="block">Study Arts in Australia</li>
+          </ol>
+        </li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="w-full h-full absolute top-0">
+      <img
+        src="../image/img1.jpg"
+        alt="img"
+        id="slideImg"
+        class="h-screen bg-cover w-full animate-[wiggle_1s_ease-in-out_infinite]"
+      />
+    </div>
+    <!-- ?end of navigation bar -->
+
+    <!-- ?main section -->
+    <main>
+      <!-- ?first sections -->
+      <section>
+        <div class="w-full h-screen relative overflow-hidden">
+          <div class="w-full h-screen absolute top-0">
+            <div class="w-[50%] my-[160px] mx-auto text-center text-white">
+              <h1 class="text-4xl font-semibold tracking-widest">
+                Study at globally reputed Universities & Colleges
+              </h1>
+              <p class="w-[94%]">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus nobis, rem ad pariatur nostrum illo aliquid provident
+                perferendis rerum fuga totam velit officiis dolore. Perferendis
+                quia voluptas placeat suscipit est.
+              </p>
+              <div class="mt-6">
+                <a
+                  href="#"
+                  type="button"
+                  class="w-[200px] text-center py-3 px-3 mx-2 rounded-lg font-semibold border border-black bg-black text-white"
+                >
+                  KNOW IN DETAIL
+                </a>
+                <a
+                  href="#"
+                  type="button"
+                  class="w-[100px] text-center py-3 px-3 mx-2 rounded-lg font-semibold border border-black bg-black text-white"
+                >
+                  APPLY NOW
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          let slideImg = document.getElementById("slideImg");
+
+          let images = new Array(
+            "../image/img1.jpg",
+            "../image/img2.jpg",
+            "../image/img3.jpg",
+            "../image/img4.jpg",
+            "../image/img5.jpg"
+            // "https://thenext.edu.np/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-24-at-16.20.39.jpeg"
+          );
+
+          let len = images.length;
+          let i = 0;
+
+          function slider() {
+            if (i > len - 1) {
+              i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout("slider()", 5000);
+          }
+        </script>
+      </section>
+      <!-- ?end of home sections -->
+
+      <!-- ?second section -->
+      <section>
+        <div class="bg-gray-100 pb-14">
+          <div class="flex">
+            <div class="m-auto w-[60%] text-center my-14">
+              <h1
+                class="text-5xl text-red-950 font-semibold tracking-wider mb-2"
+              >
+                Welcome to the Next
+              </h1>
+              <h3 class="text-3xl text-black font-bold tracking-wider mb-6">
+                The Leading Education Consultancy In Nepal
+              </h3>
+              <p class="tracking-widest text-xl">
+                The Next Education Consultancy has a long-standing reputation
+                for being one of the best educational consultancy in Nepal for
+                studying abroad. Our head office is located at Dillibazar,
+                Kathmandu including branches at Parsa, Birtamode, Pokhara,
+                Nawalparasi, Chitwan, Butwal in Nepal. And we have a support
+                office in Sydney.
+              </p>
+            </div>
+          </div>
+          <div class="mx-10">
+            <div class="flex gap-32 text-center justify-center">
+              <figure>
+                <img
+                  src="https://thenext.edu.np/wp-content/uploads/2022/09/high-visa-success-rate.png"
+                  alt=""
+                />
+                <span class="font-semibold text-xl"
+                  >High Visa Success Rate</span
+                >
+              </figure>
+              <figure>
+                <img
+                  src="https://thenext.edu.np/wp-content/uploads/2022/09/sucess.png"
+                  alt=""
+                />
+                <span class="font-semibold text-xl">18th Year of Success</span>
+              </figure>
+              <figure>
+                <img
+                  src="https://thenext.edu.np/wp-content/uploads/2022/09/certified.png"
+                  alt=""
+                />
+                <span class="font-semibold text-xl"
+                  >Certified Career Counselors</span
+                >
+              </figure>
+              <figure>
+                <img
+                  src="https://thenext.edu.np/wp-content/uploads/2022/09/visa-expert-team.png"
+                  alt=""
+                />
+                <span class="font-semibold text-xl">Visa Expert Team</span>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ?end of second section -->
+
+      <!-- ?third section -->
+      <section>
+        <div class="mx-auto">
+          <div class="text-center tracking-widest uppercase w-full my-10">
+            <h1 class="text-5xl">Top Study Destinations Around the World</h1>
+            <p class="mt-10 text-xl">
+              Discover which Top Destinations are PERFECT for You to Actually
+              Make Your Dreams a Reality
+            </p>
+          </div>
+          <div class="mx-40">
+            <div class="flex gap-20">
+              <div class="w-1/2">
+                <a href="#">
+                  <div
+                    class="flex justify-center items-center text-center h-[300px] w-full rounded-lg"
+                    style="
+                      background-image: url(https://thenext.edu.np/wp-content/uploads/2019/09/CANADA-2.jpg);
+                      background-blend-mode: darken;
+                      background-color: rgba(0, 0, 0, 0.6);
+                      background-position: bottom;
+                    "
+                  >
+                    <h1 class="text-white text-2xl">
+                      Study in <br />
+                      Canada
+                    </h1>
+                  </div>
+                </a>
+              </div>
+              <div class="w-1/2">
+                <a href="#">
+                  <div
+                    class="flex justify-center items-center text-center h-full w-full rounded-lg"
+                    style="
+                      background: url(https://thenext.edu.np/wp-content/uploads/2019/09/UK-1.jpg);
+                      background-repeat: no-repeat;
+                      background-blend-mode: darken;
+                      background-color: rgba(0, 0, 0, 0.6);
+                      background-position: bottom;
+                    "
+                  >
+                    <h1 class="text-white text-2xl">
+                      Study in <br />
+                      UK
+                    </h1>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="my-20">
+              <div class="flex gap-20 h-[40vh]">
+                <div class="w-full h-full">
+                  <a href="#">
+                    <div
+                      class="flex justify-center items-center text-center h-[300px] w-full rounded-lg"
+                      style="
+                        background-image: url(https://thenext.edu.np/wp-content/uploads/2017/09/Australia-1.jpg);
+                        background-repeat: no-repeat;
+                        background-blend-mode: darken;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        background-position: bottom;
+                        height: 100%;
+                      "
+                    >
+                      <h1 class="text-white text-2xl">
+                        Study in <br />
+                        Australia
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="w-full h-full">
+                  <a href="#">
+                    <div
+                      class="flex justify-center items-center text-center h-[300px] w-full rounded-lg"
+                      style="
+                        background-image: url(https://thenext.edu.np/wp-content/uploads/2022/09/USA.jpg);
+                        background-repeat: no-repeat;
+                        background-blend-mode: darken;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        background-position: bottom;
+                        height: 100%;
+                      "
+                    >
+                      <h1 class="text-white text-2xl">
+                        Study in <br />
+                        USA
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="w-full h-full">
+                  <a href="#">
+                    <div
+                      class="flex justify-center items-center text-center h-[300px] w-full rounded-lg"
+                      style="
+                        background-image: url(https://thenext.edu.np/wp-content/uploads/2017/08/NEW-ZEALAND.jpg);
+                        background-repeat: no-repeat;
+                        background-blend-mode: darken;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        background-position: bottom;
+                        height: 100%;
+                      "
+                    >
+                      <h1 class="text-white text-2xl">
+                        Study in <br />
+                        NEW-ZEALAND
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ?end of third section -->
+
+      <!-- ?Testimonial Section -->
+      <section class="section section-testimonial">
+        <!-- Slider main container -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolorem, inventore? Nam dolore, molestias mollitia blanditiis
+                  quisquam temporibus numquam ea similique porro quia beatae
+                  pariatur quasi velit distinctio exercitationem iste placeat!
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/789305/pexels-photo-789305.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                  />
+                </figure>
+                <div class="client-data-details">
+                  <p>Unknown</p>
+                  <p>People</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide end  -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti aliquid aut quasi autem suscipit dolore laboriosam
+                  non ullam vel fuga. Facilis alias dicta eos quaerat
+                  exercitationem libero, vitae natus mollitia?
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/789305/pexels-photo-789305.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                  />
+                </figure>
+                <div class="client-data-details">
+                  <p>Unknown</p>
+                  <p>People</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide end  -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Vitae sapiente alias laboriosam debitis quibusdam quia,
+                  tempora exercitationem voluptatum sed tenetur maxime dolorem?
+                  Laborum maiores eius incidunt qui modi totam repellat!
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/789305/pexels-photo-789305.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                  />
+                </figure>
+                <div class="client-data-details">
+                  <p>Unknown</p>
+                  <p>People</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide end  -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ullam vero porro dolor repellendus ex harum in soluta quo
+                  modi, aliquid illo dolorum atque magnam totam, voluptatibus
+                  labore. Laudantium, voluptatibus consequuntur.
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/789305/pexels-photo-789305.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                  />
+                </figure>
+                <div class="client-data-details">
+                  <p>Unknown</p>
+                  <p>People</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide end  -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                  modi molestias tenetur perspiciatis vel at odio similique
+                  tempora itaque commodi autem animi quae nesciunt rem velit
+                  dicta, minima deleniti facilis.
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/789305/pexels-photo-789305.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                  />
+                </figure>
+                <div class="client-data-details">
+                  <p>Unknown</p>
+                  <p>People</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide end  -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Corporis, iste quos quam veniam voluptates fugit id dolore
+                  nostrum harum! Impedit amet molestias odio praesentium.
+                  Quaerat ea nihil inventore veritatis nesciunt!
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/789305/pexels-photo-789305.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                  />
+                </figure>
+                <div class="client-data-details">
+                  <p>Unknown</p>
+                  <p>People</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide end  -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat consequatur quo amet inventore. Ratione commodi sint
+                  cupiditate dolorum maxime? Repellat cum officia suscipit
+                  recusandae iusto voluptates! Iusto illum inventore iure.
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/789305/pexels-photo-789305.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                  />
+                </figure>
+                <div class="client-data-details">
+                  <p>Unknown</p>
+                  <p>People</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide end  -->
+            <div class="swiper-slide">
+              <div class="swiper-client-msg">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nesciunt asperiores quam dignissimos iste incidunt quis magni
+                  dolore mollitia tempore nam corporis placeat in repellendus
+                  veritatis pariatur, delectus ullam ab vero.
+                </p>
+              </div>
+              <div class="swiper-client-data grid grid-two-col">
+                <figure>
+                  <img
+                    src="https://images.pexels.com/photos/789305/pexels-photo-789305.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                  />
+                </figure>
+                <div class="client-data-details">
+                  <p>Unknown</p>
+                  <p>People</p>
+                </div>
+              </div>
+            </div>
+            <!-- slide end  -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      <!-- ?End of Testimonial Section -->
+
+      <!-- ?form section -->
+      <div class="my-10">
+        <div class="text-center mb-6">
+          <h1 class="font-semibold text-5xl text-gray-500 mb-6">
+            GET IN TOUCH
+          </h1>
+          <span class="text-xl font-medium"
+            >We value your inquiries, send us a message and we'll get back to
+            you</span
+          >
+        </div>
+        <div class="flex mx-20">
+          <div class="w-1/2">
+            <img
+              src="https://thenext.edu.np/wp-content/uploads/2023/01/woman-gb8cde7b84_1920-1.jpg"
+              alt=""
+              class="rounded-3xl w-[500px]"
+            />
+          </div>
+          <form class="bg-slate-400 w-1/2 shadow-lg rounded-2xl px-10 py-10">
+            <input
+              class="placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+              placeholder="FULL NAME*"
+              type="text"
+              name="search"
+            />
+            <br />
+            <br />
+            <input
+              class="placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+              placeholder="Email Address*"
+              type="text"
+              name="search"
+            />
+            <br />
+            <br />
+            <input
+              class="placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+              placeholder="Mobile Number*"
+              type="text"
+              name="search"
+            />
+            <br />
+            <br />
+            <select
+              class="block bg-white w-full border border-slate-300 rounded-md py-3 pl-9 pr-3 shadow-sm focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-slate-400"
+            >
+              <option value="Select Nearest Office">
+                Select Nearest Office*
+              </option>
+              <option value="New Baneshwor">New Baneshwor</option>
+              <option value="Putalisadak">Putalisadak</option>
+              <option value="Pokhara">Pokhara</option>
+              <option value="Butwal">Butwal</option>
+              <option value="Birtamode">Birtamode</option>
+              <option value="Bhairahawa">Bhairahawa</option>
+              <option value="Parsa">Parsa</option>
+              <option value="Nawalparasi">Nawalparasi</option>
+              <option value="Chitwan">Chitwan</option>
+              <option value="Sydney">Sydney</option>
+            </select>
+            <br />
+            <br />
+            <select
+              class="block bg-white w-full border border-slate-300 rounded-md py-3 pl-9 pr-3 shadow-sm focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-slate-400"
+            >
+              <option value="Select Preferred Study Destination">
+                Select Preferred Study Destination*
+              </option>
+              <option value="Australia">Australia</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+              <option value="USA">USA</option>
+              <option value="Ireland">Ireland</option>
+            </select>
+            <br />
+            <br />
+            <input type="checkbox" name="" id="" />
+            <strong class="text-lg"
+              >Yes, I would like to receive information on study abroad news and
+              events from TheNext.s</strong
+            >
+            <br />
+            <br />
+            <br />
+            <a
+              href="#"
+              type="button"
+              class="border border-red-500 px-5 py-3 rounded-md bg-red-500 text-white text-xl flex justify-center"
+              >submit</a
+            >
+          </form>
+        </div>
+      </div>
+      <!-- ?end of form section -->
+    </main>
+    <!-- ?end fo main sections -->
+
+    <!-- ?footer section -->
+    <footer>
+      <div class="bg-black">
+        <div class="flex justify-around my-10">
+          <div class="text-white mt-14">
+            <h1 class="text-3xl font-bold text-red-600">Visa Process</h1>
+            <div class="text-xl font-semibold cursor-pointer my-6">
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Student Visa in Uk</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Student Visa in Australia</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#"></a>Student Visa in Canada</span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#"></a>Student Visa in New Zealand</span
+              >
+            </div>
+          </div>
+          <div class="text-white mt-14">
+            <h1 class="text-3xl font-bold text-red-600">Scholarships</h1>
+            <div class="text-xl font-semibold my-4 cursor-pointer">
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Study in Australia Scholarships</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Study in Canada Scholarships</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Study in New Zealand scholarships</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Study in United Kingdom Scholarships</a></span
+              >
+            </div>
+          </div>
+          <div class="text-white mt-14">
+            <h1 class="text-3xl font-bold text-red-600">Support</h1>
+            <div class="text-xl font-semibold my-4">
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Study Abroad FAQs</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Blogs</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Testimonial</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Universities</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Scholarship</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Interview Preparation</a></span
+              >
+            </div>
+          </div>
+          <div class="text-white mt-14">
+            <h1 class="text-3xl font-bold text-red-600">Resources</h1>
+            <div class="text-xl font-semibold my-4">
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Relationship Certificate with Sponsor</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Tax Clearance Certificate</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Bank Balance Certificate</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Salary certificate</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#"
+                  >Sponsorship certificate (AOS) for Australia</a
+                ></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">SOP Tips</a></span
+              >
+              <br />
+              <span class="hover:text-red-500 duration-300"
+                ><a href="#">Income Certificate</a></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-white">
+          <h1 class="text-center text-2xl font-bold text-red-600">
+            LOCATION DETAILS
+          </h1>
+          <div class="flex">
+            <div class=""></div>
+            <div class=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-around items-center">
+        <h1>Privacy Policy | Designed & Developed by Krizmatic</h1>
+        <h1>THE NEXT © All rights reserved.</h1>
+      </div>
+    </footer>
+    <!-- ?end of footer section -->
+
+    <!-- *gsap script -->
+    <script>
+      gsap.to("nav", {
+        backgroundColor: "#000",
+        color: "#fff",
+        duration: 0.5,
+        height: "60px",
+        scrollTrigger: {
+          trigger: "nav",
+          scroller: "body",
+          // markers: true,
+          start: "top -10%",
+          end: "top -11%",
+          scrub: 1,
+        },
+      });
+    </script>
+    <!-- *end of gsap script -->
+  </body>
+</html>
